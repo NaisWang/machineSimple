@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.machineend.mapper.MachineBasicInformationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.pojo.MachineBasicInformation">
+        <id column="machineNumber" property="machineNumber" />
+        <result column="imei" property="imei" />
+        <result column="brand" property="brand" />
+        <result column="model" property="model" />
+        <result column="sku" property="sku" />
+        <result column="quality" property="quality" />
+        <result column="conditionDescription" property="conditionDescription" />
+        <result column="bidPrice" property="bidPrice" />
+        <result column="purchaseChannel" property="purchaseChannel" />
+        <result column="bidDate" property="bidDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        machineNumber, imei, brand, model, sku, quality, conditionDescription, bidPrice, purchaseChannel, bidDate
+    </sql>
+
+</mapper>
